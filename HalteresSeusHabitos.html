@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank" />
+    <title>Halteres seus Hábitos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#DDCC55" text="#000000" link="#222222" vlink="#222222">
+    <table width="100%">
+        <tr>
+            <td colspan="2">
+                <img src="Imagens/HalteresSeusHabitosTopo.png" align="left" />
+                <div align="right">
+                    <font face="verdana,ubuntu" size="-1">
+                        <address>Estrada do Puxa Ferro, 12<br />
+                            Tel: (21) 91234-5678<br />
+                            <a href="mailto:contato@halterhabit.com.br">
+                                contato@halterhabit.com.br</a>
+                        </address><br />
+                        <hr width="320" align="left" size="4" noshade />
+            </td>
+        </tr>
+        <tr>
+            <td width="180" valign="top"><br />
+                <font face="verdana,ubuntu" color="#332277"><b>
+                        <ul type="square">
+                            <li><a href="HalteresSeusHabitos.html">
+                                    Apresentação</a></li><br />
+                            <li><a href="#planos">Planos</a></li><br />
+                            <li><a href="#Equipamentos">Equipamentos</a></li><br />
+                            <li><a href="#inscricao">Inscrição</a></li>
+                        </ul>
+                    </b>
+                </font>
+            </td>
+            <td>
+                <div align="center">
+                    <font face="Lucida Bright,liberation">
+                        <p><img src="Imagens/HalteresSeusHabitosLogo.png" hspace="15" /><br>
+                            <br>faça exercícios e tenha mais
+                            saúde e disposição!
+                        </p>
+                    </font>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div style="width: 50%; margin: auto;">
+    
+    <section id="planos">
+        <h3 class="Titulo">Planos 
+            (<span class="preco">valor mensal</span>)
+        </h3>
+        <ul class="listaPlano">
+            <li><a href="Academia.html">Academia:</a></li>
+            <br>
+            <li><a href="Natacao.html">Natação (3x semana):</a></li>
+            <br>
+            <li><a href="Combo.html">Combo (academia + natação):</a></li>
+        </ul>
+        <h4 class="Titulo">Matrícula Obrigatória: R$ 
+            <span class="preco">80,00</span>
+        </h4>
+    </section>
+    
+    <section id="Equipamentos">
+        <br/>
+        <table class="tabEquip">
+            <tr>
+                <th colspan="3" class="tabTitulo">Alguns dos Nossos Equipamentos</th>
+            </tr>
+            <tr>
+                <td style="width: 70px; text-align: center; color: #FFFFFF; background-color: #802020; padding: 20px; font-weight: bold;">              
+                    <a  onclick="mudarConteudo('Cadeira Extensora')"style="color: #FFFFFF; text-decoration: none;">Cadeira Extensora</a> 
+                </td>
+                <td class="dado1" rowspan="3" style="width: 150px; background-color: #FFFFFF; text-align: center;">
+                    <img src="Imagens/Vazio_360.png" alt="Equipamento" style="width: 120px; height: 120px;">
+                </td>
+                <td class="dado2" rowspan="3" style="background-color: #F5F5DC; padding: 20px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 70px; text-align: center; color: #FFFFFF; background-color: #802020; padding: 20px; font-weight: bold;">
+                <a onclick="mudarConteudo('Supino Vertical')" style="color: #FFFFFF; text-decoration: none;">Supino Vertical</a> 
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 70px; text-align: center; color: #FFFFFF; background-color: #802020; padding: 20px; font-weight: bold;">
+                <a onclick="mudarConteudo('Remada Baixa')" style="color: #FFFFFF; text-decoration: none;">Remanda baixa</a> 
+                </td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </section>
+
+    
+    
+    
+   
+    
+
+        <section id="inscricao">
+            <h3 class="Titulo">Inscrição</h3>
+            <form method="POST" onsubmit="return validarTelefone()">
+            <div class="formul">
+            <fieldset class="fsPessoal">
+            <legend> Dados Pessoais&nbsp;</legend>
+            <div class="linhaNome">
+             <label for="nome" class="ColEsqPes">Nome: </label>
+             <input type="text" class="inpNome"
+             id="nome" name="TxtNome">
+            </div>
+            <div class="linhaDados">
+             <fieldset class="fsGenero">
+             <legend> Genero&nbsp;</legend>
+             <input type="radio" name="TglGenero" value="M"> 
+             Masculino<br/>
+             <input type="radio" checked name="TglGenero" value="F">
+             Feminino<br/>
+             <input type="radio" name="TglGenero" value="O"> Outro<br/>
+             </fieldset>
+             
+            <br/>
+            <label for="tel" class="ColEsqPes">Telefone: </label>
+                    <input type="tel" class="inpTelef" id="tel" name="TxtTelefone"><br/> 
+                    <br/>
+                    <label for="cel" class="ColEsqPes">Celular: </label>
+                    <input type="tel" class="inpTelef" id="cel" name="TxtCelular"><br/>
+                    <br/>
+            <br/><label for="idade" class="ColEsqPes">Idade:</label>
+             <input type="number" class="numDD"
+             id="idade" name="TxtIdade"
+             min="18" max="88" value="18" / ><br/>
+            </div>
+            </fieldset>
+            <fieldset class="fsPessoal">
+            <legend> Matrícula&nbsp;</legend>
+            <div class="linhaNome">
+            <label for="mat">Matrículado?
+             <input type="checkbox" name="chkMatric"
+             value="S" id="mat" /></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="mat" class="ColDirMat">Número: 
+            <input type="text" class="inpMat"
+             id="TxtMatricula" name="TxtMatricula" />
+            </div>
+            <div class="linhaNome">
+            <label for="ativ">Atividade:
+             <select id="ativ">
+             <option> ----- </option>
+             <option>Academia</option>
+             <option>Natação</option>
+             <option>Combo</option></select> </label>
+            &nbsp;&nbsp;
+            <label for="plano" class="ColDirMat">Plano: 
+             <select id="plano">
+             <option> ----- </option>
+             <option>Anual</option>
+             <option>Semestral</option>
+             <option>Mensal</option></select> </label>
+            </div>
+            <fieldset><legend> Cartão&nbsp;</legend>
+            <label class="colLabCrd" >Bandeira:
+            <label><input type="radio" name="RadBand" checked />Visa</label>
+            <label><input type="radio" name="RadBand" />Master</label>
+            <label><input type="radio" name="RadBand" />Elo</label>
+            </label><br/>
+            <label class="colLabCrd" for="mesVal">Validade:&nbsp;&nbsp;
+            <input type="number" name="TxtMesVal" id="mesVal" 
+             min="1" max="12" class="numDD" value="10" /> /
+            <input type="number" name="TxtAnoVal" value="2024" 
+             min="2023" max="2040" class="numQD" /></label><br/>
+            <label class="colLabCrd" for="numCar">Número:&nbsp;&nbsp;
+            <input type=text name="TxtNumCard" 
+             class="inpNCC" id="numCar"/></label><br/>
+            </fieldset>
+            <div class="linhaNome">
+                <input type="button" value="Matrícula+Plano" onclick="calcularValor()">
+                <label for="TxtTotal" class="ColDirMat">Valor: R$ 
+                <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpVal" />
+            </label>
+            </div>
+            </fieldset>
+            <p class="entDireita"> 
+             <input type="submit" value="Enviar" name="BtnEnviar">
+             <input type="reset" value="Limpar" name="BtnLimpar">
+             </p>
+            <br><br>
+            </div>
+            </form>
+        </section>
+    </div>
+
+    <script>
+    function validarTelefone() {
+    const telefoneFixo = document.getElementById("tel").value;
+    const celular = document.getElementById("cel").value;
+    const regexFixoNumerico = /^\d{10}$/;  
+    const regexCelularNumerico = /^\d{11}$/;  
+    const regexSomenteNumeros = /^\d+$/; 
+    const telefoneFixoLimpo = telefoneFixo.replace(/\D/g, '');
+    const celularLimpo = celular.replace(/\D/g, '');
+
+    if (telefoneFixoLimpo.length !== 10) {
+        alert("O número de telefone fixo deve conter exatamente 10 dígitos.");
+        return false;
+    } else if (!regexSomenteNumeros.test(telefoneFixoLimpo)) {
+        alert("O telefone fixo deve conter apenas números, sem letras ou caracteres especiais.");
+        return false;
+    }
+
+    if (celularLimpo.length !== 11) {
+        alert("O número de celular deve conter exatamente 11 dígitos.");
+        return false;
+    } else if (!regexSomenteNumeros.test(celularLimpo)) {
+        alert("O celular deve conter apenas números, sem letras ou caracteres especiais.");
+        return false;
+    }
+
+    return true; 
+}
+function acionarValidacao(event) {
+    if (event.key === "Enter") {  
+       // validarTelefone(); 
+        document.getElementById("tel").addEventListener("input", validarTelefone);
+        document.getElementById("cel").addEventListener("input", validarTelefone);
+    }
+}
+
+        function mudarConteudo(equipo) {
+            const dado1 = document.querySelector('.dado1');
+            const dado2 = document.querySelector('.dado2');
+            
+            switch (equipo) {
+                case 'Cadeira Extensora':
+                    dado1.innerHTML = '<img src="Imagens/CadeiraExtensora.png" alt="Cadeira Extensora" style="width: 120px; height: 120px;">';
+                    dado2.innerHTML = 'O principal movimento articular realizado na cadeira extensora é a extensão de joelho, portanto o quadríceps (vasto lateral, vasto medial, vasto intermédio e reto femoral são os principais músculos trabalhados durante o exercício.<br> [<a href="https://treinomestre.com.br/cadeira-extensora-comopotencializar-os-resultados-4-dicas-importantes/"> fonte</a>]';
+                    break;
+                case 'Supino Vertical':
+                    dado1.innerHTML = '<img src="Imagens/SupinoVertical.png" alt="Supino Vertical" style="width: 120px; height: 120px;">';
+                    dado2.innerHTML = 'O supino vertical é um exercício popular e eficaz para desenvolver força, tamanho e definição nos músculos da parte superior do corpo. Ao usar uma máquina de peso guiada, este exercício oferece uma maneira acessível e controlada de direcionar os músculos do peito, ombros e tríceps.&nbsp; [<a href="https://www.academiacentralfitness.com.br/post/supinom%C3%A1quina-como-fazer-benef%C3%ADcios-e-varia%C3%A7%C3%B5es"> fonte</a>]';
+                    break;
+                case 'Remada Baixa':
+                    dado1.innerHTML = '<img src="Imagens/RemadaBaixa.png" alt="Remada Baixa" style="width: 120px; height: 120px;">';
+                    dado2.innerHTML = 'A Remada Baixa é um exercício de máquina para costas feito sentado no banco usando a barra triângulo. A Remada trabalha inúmeros músculos como o lombar, latíssimo do dorso, trapézio, deltoide posterior e até mesmo o braquiorradial.&nbsp;[<a href="https://www.hipertrofia.org/blog/2018/03/24/remadabaixa/">fonte</a>]';
+                    break;
+                default:
+                    dado1.innerHTML = 'Imagem não disponível.';
+                    dado2.innerHTML = '';
+            }
+        }
+
+        function calcularValor() {
+    const atividadeElement = document.getElementById('ativ');
+    const planoElement = document.getElementById('plano');
+    const matriculadoElement = document.getElementById("mat");
+    const numeroMatriculaElement = document.getElementById('TxtMatricula');
+
+    // Verifica se os elementos existem
+    if (!atividadeElement || !planoElement || !matriculadoElement || !numeroMatriculaElement) {
+        console.error("Um ou mais elementos não foram encontrados no DOM.");
+        return;
+    }
+
+    const atividade = atividadeElement.value;
+    const plano = planoElement.value;
+    const matriculado = matriculadoElement.checked;
+    const numeroMatricula = numeroMatriculaElement.value;
+
+    if (atividade === "-----" || plano === "-----") {
+        alert("Por favor, selecione uma atividade e um plano.");
+        return; 
+    }
+
+    const precos = {
+        'Academia': 180.00,
+        'Natação': 200.00,
+        'Combo': 440.00
+    };
+
+    let valorAtividade = precos[atividade] || 0;
+    let multiplicadorPlano;
+
+    if (plano === 'Anual') {
+        multiplicadorPlano = 12;
+    } else if (plano === 'Semestral') {
+        multiplicadorPlano = 6;
+    } else {
+        multiplicadorPlano = 1;
+    }
+
+    let valorTotal = valorAtividade * multiplicadorPlano;
+
+    if (!matriculado || numeroMatricula === "") {
+        const valorMatricula = 80.00;
+        valorTotal += valorMatricula;
+    }
+
+    console.log('Valor Total Calculado:', valorTotal);
+    document.getElementById("TxtTotal").value = valorTotal.toFixed(2);
+}
+
+
+
+    </script>
+</body>
+
+</html>

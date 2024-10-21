@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .close-btn {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 400px;
+        }
+
+        .close-btn:hover {
+            background-color: #A52A2A;
+        }
+
+        #content {
+            background-color: #F5F5DC;
+            padding: 20px;
+            margin: 20px;
+        }
+
+
+        .Titulo {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .ol {
+            color: #202020;
+            list-style-type: lower-alpha;
+        }
+
+        .preco {
+            color: #CC0000;
+            font-size: 25px;
+        }
+
+        .text {
+            font-size: 25px;
+            margin-left: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="academia">
+        <div style="width: 100%; margin: auto;">
+
+            <h3 class="Titulo" style="margin-right: 420px;">Academia <br>
+                (<span class="preco">Natação</span>)
+            </h3>
+            <ul class="text">
+                <img src="../Imagens/Natacao.png" style="margin-left: 50px;">
+                <ol>
+                    <li>Anual (R$ <span class="preco">300,00</span>)</li>
+                    <li>Semestral (R$ <span class="preco">340,00</span>)</li>
+                    <li>Mensal (R$ <span class="preco">380,00</span>)</li>
+                </ol>
+            </ul>
+            <button class="close-btn" onclick="fecharConteudo()">Fechar</button>
+        </div>
+    </section>
+
+    <script>
+        function fecharConteudo() {
+            window.location.href = 'HalteresSeusHabitos.html';        }
+    </script>
+
+</body>
+
+</html>l
